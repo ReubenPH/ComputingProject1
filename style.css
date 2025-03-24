@@ -43,13 +43,18 @@ ul.sideimage {
     align-items: center;
     gap: 20px;
 }
-ul.sideimage img{
+.sideimage img{
     max-width: 200px;
     height: auto;
 }
-ul.sideimage li{
+.sideimage li{
     flex: 1;
+    list-style-type: none;
 }
+.column {
+    float: left;
+    width: 50%;
+  }
   /* Container for overlaying text on image */
 .overlay {
     position: relative;
