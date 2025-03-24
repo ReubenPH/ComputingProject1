@@ -1,4 +1,5 @@
-ul {
+/*Navigation Bar Formatting*/
+div.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -6,12 +7,12 @@ ul {
     background-color: cornflowerblue;
 }
 
-li {
+div.navbar li {
     float: left;
     border-right: 1px solid lightgrey;
 }
 
-li a {
+div.navbar li a {
         display: block;
         color: white;
         text-align: center;
@@ -19,12 +20,12 @@ li a {
         text-decoration: none;
     }
 
-.active {
+div.navbar .active {
     background-color: lightgrey;
     color: cornflowerblue;
 }
 
-li a:hover:not(.active) {
+div.navbar li a:hover:not(.active) {
     background-color: lightsteelblue;
 }
 
@@ -35,10 +36,28 @@ li a:hover:not(.active) {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  /*Putting images besides text, or above if the screen is too small*/
+ul.sideimage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+ul.sideimage img{
+    max-width: 200px;
+    height: auto;
+}
+ul.sideimage li{
+    flex: 1;
+}
   /* Container for overlaying text on image */
-#container {
+.overlay {
     position: relative;
     text-align: center;
     color: cornsilk;
     font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+/*Website Background Colour*/
+body {
+    background-color: rgb(199, 217, 231);
   }
