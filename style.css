@@ -27,3 +27,18 @@ li a {
 li a:hover:not(.active) {
     background-color: lightsteelblue;
 }
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* Container for overlaying text on image */
+#container {
+    position: relative;
+    text-align: center;
+    color: cornsilk;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
