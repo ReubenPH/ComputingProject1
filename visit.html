@@ -8,8 +8,11 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <img src="images/haddingtonhighstreet.jpg" alt="Haddington High Street">
+    <div class="overlay"> <!--Overlays text on an image to create a banner-->
+        <img class="container-fluid"src="images/haddingtonhighstreet.jpg" alt="Haddington High Street">
+        <div class = "centered"><h1>Haddington</h1></div>
+    </div>
+    <div class="navbar d-flex justify-content-center"> <!--styles links as boxes and centres them for navigation-->
         <ul>
             <li><a href="home.html">Home</a></li>
             <li><a href="history.html">History</a></li>
@@ -19,14 +22,15 @@
     <h1>Come Visit Haddington!</h1>
     <div class="container">
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-7"> 
+                <!--splits into the required 7:5 ratio-->
         <div class="row visitcard">
-            <div class = "col-md-6 mb-3">
-                <div class="card mb-6 box-shadow">
+            <div class = "col-md-6 mb-3"> <!--Displays 2 Cards side by side if there's room-->
+                <div class="card mb-6 box-shadow"> <!--Adds an image of attraction then a short description-->
                     <img class="card-img-top" src = "images/visit/johngraycentre.jpg">
                     <div class="card-body">
                         <p class = "card-text">The John Gray Centre is a Library and Museum named after John Gray, who established one of the first public libraries in Haddington in 1717. The museum is focused on local history.</p>
-                        <a class="d-flex justify-content-center" href="https://www.johngraycentre.org/">
+                        <a class="d-flex justify-content-center" href="https://www.johngraycentre.org/"> <!--Button link to relevent external website-->
                             <button class="btn btn-primary">Learn More</button>
                         </a>
                     </div>

@@ -1,5 +1,6 @@
 /*Navigation Bar Formatting*/
-div.navbar ul {
+
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -7,12 +8,12 @@ div.navbar ul {
     background-color: cornflowerblue;
 }
 
-div.navbar li {
+.navbar li {
     float: left;
     border-right: 1px solid lightgrey;
 }
 
-div.navbar li a {
+.navbar li a {
         display: block;
         color: white;
         text-align: center;
@@ -20,13 +21,19 @@ div.navbar li a {
         text-decoration: none;
     }
 
-div.navbar .active {
+.navbar .active {
     background-color: lightgrey;
     color: cornflowerblue;
 }
 
-div.navbar li a:hover:not(.active) {
+.navbar li a:hover:not(.active) {
     background-color: lightsteelblue;
+}
+/*Formattijng for headers*/
+h1, h2 {
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Centered text */
@@ -36,7 +43,7 @@ div.navbar li a:hover:not(.active) {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  /*Putting images besides text, or above if the screen is too small*/
+  /*Putting images besides text*/
 ul.sideimage {
     display: flex;
     flex-direction: column;
@@ -72,4 +79,9 @@ body {
 }
 .visitcard a{
     text-decoration: none;
+}/*For pictures that should be bigger*/
+#bigimage {
+    max-width: 400px;
+    height: auto;
+    margin: 20px;
 }
