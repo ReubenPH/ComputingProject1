@@ -66,3 +66,10 @@ ul.sideimage {
 body {
     background-color: rgb(199, 217, 231);
   }
+/*Colours button and removes underline from links in the visit cards*/
+.visitcard button {
+    background-color: cornflowerblue;
+}
+.visitcard a{
+    text-decoration: none;
+}
